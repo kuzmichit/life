@@ -9,7 +9,7 @@ export class Grid {
     console.log('set', this.space)
   }
   get(vector) {
-    this.space[vector.x + vector.y*this.width];
+    this.space[+(vector.x + vector.y*this.width)];
     console.log('get', vector.x + vector.y*this.width)
   }
   isInside(vector)  {
